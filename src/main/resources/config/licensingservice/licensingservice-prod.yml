@@ -1,5 +1,5 @@
 tier: prod
-example.property: "I AM A PROD PROPERTY OVERRIDE"
+example.property: "Prod property"
 spring.jpa.database: "POSTGRESQL"
 spring.datasource.platform:  "postgres"
 spring.jpa.show-sql: "true"
