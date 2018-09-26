@@ -1,30 +1,30 @@
 ####
 # Github as backend for config service.
 ####
-server:
-  port: 8888
-spring:
-  cloud:
-    config:
-      server:
-        encrypt.enabled: false
-        git:
-          uri: https://github.com/cloud-spring-boot/config-repo
-          searchPaths: licensingservice
-          username: mstepan
-          password: max611191
+#server:
+#  port: 8888
+#spring:
+#  cloud:
+#    config:
+#      server:
+#        encrypt.enabled: false
+#        git:
+#          uri: https://github.com/cloud-spring-boot/config-repo
+#          searchPaths: licensingservice
+#          username: mstepan
+#          password: max611191
 
 
 ####
 # Classpath (aka local file system) as backend service.
 ####
-#server:
-#   port: 8888
-#spring:
-#  profiles:
-#    active: native
-#  cloud:
-#     config:
-#       server:
-#           native:
-#              searchLocations: classpath:config/,classpath:config/licensingservice
+server:
+   port: 8888
+spring:
+  profiles:
+    active: native
+  cloud:
+     config:
+       server:
+           native:
+              searchLocations: classpath:config/,classpath:config/licensingservice
