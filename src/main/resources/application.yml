@@ -24,7 +24,4 @@ spring:
   profiles:
     active: native
   cloud:
-     config:
-       server:
-           native:
-              searchLocations: classpath:config/,classpath:config/licensingservice
+     config.server.native.searchLocations: classpath:config/,classpath:config/licensingservice
