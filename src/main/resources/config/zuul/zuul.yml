@@ -3,3 +3,6 @@ zuul.ignored-services: '*'
 
 zuul.routes.licensingservice: /licensing/**
 zuul.routes.organization-service: /organization/**
+
+# By default all 3 headers: Cookie, Set-Cookie, and Authorization blacklisted and not passed
+zuul.sensitiveHeaders: Cookie,Set-Cookie
