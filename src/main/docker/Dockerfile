@@ -1,7 +1,8 @@
 FROM openjdk:8-jdk-alpine
 MAINTAINER Maksym Stepanenko <stepanenkomaksi@gmail.com>
-RUN  apk update && apk upgrade && apk add netcat-openbsd && apk add bash && apk add curl
+RUN  apk update && apk upgrade && apk add netcat-openbsd && apk add bash && apk add curl && apk add tcpdump
 RUN mkdir -p /usr/local/config-service
+RUN mkdir -p /usr/local/config-service/pcap
 
 RUN echo $JAVA_HOME
 
