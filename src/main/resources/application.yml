@@ -25,5 +25,9 @@ spring:
     active: native
   cloud:
      config:
-      server.native.searchLocations: classpath:config/,classpath:config/licensingservice,classpath:config/zuul
+      server.native.searchLocations: >
+        classpath:config/,
+        classpath:config/licensingservice,
+        classpath:config/zuul,
+        classpath:config/auth
       discovery.enabled: true
