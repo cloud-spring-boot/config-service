@@ -29,5 +29,6 @@ spring:
         classpath:config/,
         classpath:config/licensingservice,
         classpath:config/zuul,
-        classpath:config/auth
+        classpath:config/auth,
+        classpath:config/organization-service
       discovery.enabled: true
